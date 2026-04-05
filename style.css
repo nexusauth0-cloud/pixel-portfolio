@@ -1,0 +1,201 @@
+/* 1. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Light Ash Background */
+    color: #333; /* Dark Grey for text */
+    line-height: 1.6;
+}
+
+/* Dark Mode Colors */
+body.dark-mode {
+    background-color: #1a1a1b; /* Dark Ash */
+    color: #e0e0e0;
+}
+
+body.dark-mode .project-card, 
+body.dark-mode .contact-form input, 
+body.dark-mode .contact-form textarea {
+    background-color: #2d2f30;
+    color: white;
+    border-color: #444;
+}
+
+body.dark-mode h2 {
+    color: #B2BEB5;
+}
+
+.theme-btn {
+    background: none;
+    border: 1px solid #B2BEB5;
+    color: #B2BEB5;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+/* 2. Navigation Bar */
+.navbar {
+    background-color: #353839; /* Onyx/Deep Ash */
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #B2BEB5; /* Ash Grey Link color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
+
+/* 3. Section Containers */
+section {
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #353839;
+    border-bottom: 3px solid #B2BEB5;
+    display: inline-block;
+}
+
+/* 4. Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: #B2BEB5; /* Ash color */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 5. Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #B2BEB5; /* Ash accent */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-used {
+    margin-top: 15px;
+    color: #708090; /* Slate Grey */
+    font-size: 0.85rem;
+}
+
+/* 6. Contact Form */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background: #353839;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #B2BEB5;
+    color: #333;
+}
+
+/* 7. Footer & Back to Top */
+footer {
+    background: #353839;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.social-links a {
+    color: #B2BEB5;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #B2BEB5;
+    color: #333;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
